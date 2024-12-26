@@ -6,7 +6,6 @@ const Commande = require("./Commande");
 const axios = require('axios');
 const verifyToken = require('../middleware/authMiddleware');
 
-//Connexion à la base de données
 mongoose.set('strictQuery', true);
 mongoose.connect("mongodb://0.0.0.0:27017/commande-service", { useNewUrlParser: true, },
 ).then(() => {
